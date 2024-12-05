@@ -52,6 +52,13 @@ public class Menu extends JFrame {
                 new explainRule(member_id);
             }
         });
+        rankingButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+                new Ranking();
+            }
+        });
     }
 
     public static void main(String[] args) {
